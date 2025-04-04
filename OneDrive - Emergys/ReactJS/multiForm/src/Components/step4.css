@@ -1,0 +1,118 @@
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--marine-blue);
+}
+
+.sub_Heading {
+  color: var(--cool-gray);
+}
+
+.form_Heading {
+  line-height: 2rem;
+}
+.summaryComponents {
+  margin: 6% 0% 0% 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.selected {
+  border: none;
+  border-radius: 0.6rem;
+  background-color: var(--magnolia);
+}
+.selectedPlan {
+  padding: 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selectedPLanName {
+  font-weight: 700;
+  color: var(--marine-blue);
+}
+.changePlanDynamically {
+  color: var(--cool-gray);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.changePlanDynamically:hover {
+  color: var(--marine-blue);
+  transition: 0.2s ease-in-out;
+}
+.selectedPrice {
+  font-weight: 700;
+  color: var(--marine-blue);
+}
+.underLine {
+  border: 1px solid var(--light-gray);
+  margin: 0 4% 0 4%;
+}
+.selectedAddOnsList {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.selectedAddOns {
+  display: flex;
+  justify-content: space-between;
+}
+.selectedAddOnsName {
+  color: var(--cool-gray);
+}
+.selectedAddOnsPrice {
+  color: var(--marine-blue);
+}
+.totalPriceSection {
+  padding: 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.totalAsPer {
+  color: var(--cool-gray);
+}
+.totalPrice {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--purplish-blue);
+}
+.buttonGroup {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 87%;
+}
+#nextButton {
+  position: absolute;
+  left: 58%;
+  background-color: var(--marine-blue);
+  color: var(--white);
+  outline: none;
+}
+#nextButton:hover {
+  transition: 0.2s ease-in-out;
+  background-color: var(--purplish-blue);
+  outline: none;
+}
+#backButton {
+  position: absolute;
+  background-color: var(--white);
+  color: var(--cool-gray);
+  font-weight: 600;
+  outline: none;
+}
+#backButton:hover {
+  transition: 0.2s ease-in-out;
+  color: var(--marine-blue);
+  border: none;
+}
+.emptyAddOnList {
+  color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}

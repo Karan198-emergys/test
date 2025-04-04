@@ -1,0 +1,156 @@
+.planModule {
+  width: 100%;
+  margin: 6.2% 0 0 0;
+  display: flex;
+  gap: 4%;
+}
+.card {
+  width: 33.33%;
+  border: 1px solid var(--light-gray);
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+.card:hover {
+  cursor: pointer;
+  border-color: var(--purplish-blue);
+}
+.card img {
+  padding: 14% 0 24% 14px;
+}
+.radioCard {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.planType {
+  color: var(--marine-blue);
+  font-weight: 500;
+}
+.priceDetail {
+  padding: 0 0 10% 13%;
+  line-height: 1.4rem;
+}
+.planPrice {
+  font-size: 0.9rem;
+  color: var(--cool-gray);
+}
+.free_offer {
+  font-size: 0.9rem;
+  color: var(--marine-blue);
+  font-style: italic;
+}
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--marine-blue);
+}
+.sub_Heading {
+  color: var(--cool-gray);
+}
+.form_Heading {
+  line-height: 2rem;
+}
+.planToggler {
+  margin: 4% 0 20% 0;
+  border: none;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  gap: 4%;
+  background-color: var(--alabaster);
+  width: 100%;
+  position: relative;
+}
+.DurationSlider {
+  position: relative;
+}
+#plan_Selection_toggler {
+  height: 0;
+  width: 0;
+}
+.slider {
+  position: relative;
+  background-color: var(--marine-blue);
+  display: flex;
+  width: 2.2rem;
+  height: 1.2rem;
+  bottom: 0.8rem;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  width: 1rem;
+  height: 1rem;
+  border: none;
+  border-radius: 3rem;
+  top: 7%;
+  left: 7%;
+  transition: 0.3s ease;
+}
+#plan_Selection_toggler:checked + .slider:before {
+  transform: translateX(1rem);
+  transition: 0.3s ease;
+  top: 8%;
+  left: 0.2%;
+}
+.selectedCard {
+  background-color: var(--magnolia);
+  border-color: var(--purplish-blue);
+}
+.monthlyColor {
+  color: var(--cool-gray);
+}
+.yearlyColor {
+  color: var(--marine-blue);
+}
+.resetColor {
+  color: var(--cool-gray);
+}
+.buttonGroup {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 87%;
+}
+#backButton {
+  position: absolute;
+  background-color: var(--white);
+  color: var(--cool-gray);
+  font-weight: 600;
+  outline: none;
+}
+#backButton:hover {
+  transition: 0.2s ease-in-out;
+  color: var(--marine-blue);
+  border: none;
+}
+.secondStepNextButtonBefore {
+  background-color: var(--cool-gray);
+  color: var(--white);
+  outline: none;
+  position: absolute;
+  left: 58%;
+}
+.secondStepNextButtonAfter {
+  background-color: var(--marine-blue);
+  color: var(--white);
+  outline: none;
+  position: absolute;
+  left: 58%;
+}
+.tempTextStep2 {
+  font-size: 1.4rem;
+  position: relative;
+  bottom: 19%;
+  left: 20%;
+  color: var(--light-gray);
+}

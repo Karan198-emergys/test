@@ -1,0 +1,20 @@
+.step5Container {
+  height: 100%;
+}
+.thanksSummary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.ThanksText {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--marine-blue);
+}
+.thanksDescription {
+  color: var(--cool-gray);
+  text-align: center;
+  padding: 3%;
+}

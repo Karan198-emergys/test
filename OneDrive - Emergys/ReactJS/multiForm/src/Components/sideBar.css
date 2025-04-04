@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sideBar {
+  background-image: url("../assets/images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  width: 30%;
+  background-size: 97%;
+  padding: 5% 0 0 4%;
+}
+.sideContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.stepWrapper {
+  display: flex;
+  align-items: center;
+  gap: 6%;
+}
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.2rem;
+  border: 1px solid var(--white);
+  height: 2.2rem;
+  color: var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.activeStep {
+  background-color: var(--light-blue);
+  color: var(--marine-blue);
+}
+.stepInfo {
+  line-height: 1.4rem;
+  letter-spacing: 1px;
+}
+.caption {
+  font-weight: 400;
+  color: var(--light-gray);
+}
+.stepName {
+  font-weight: 600;
+  color: #ffffff;
+}

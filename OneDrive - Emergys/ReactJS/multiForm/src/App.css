@@ -1,0 +1,81 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: ubuntu;
+}
+@font-face {
+  font-family: ubuntu;
+  src: url("/fonts/Ubuntu-Regular.ttf");
+}
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+
+  --cool-gray: hsl(231, 11%, 63%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+}
+.Container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--magnolia);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer {
+  padding: 0.8%;
+  display: flex;
+  border: none;
+  border-radius: 0.6rem;
+  width: 56%;
+  height: 70%;
+  background-color: var(--white);
+  box-shadow: 0px 0px 8px 0px rgb(224, 246, 255);
+  color: black;
+}
+.formContent {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5% 8% 0 9%;
+  border-radius: 0.4rem;
+}
+.buttonGroup {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 88%;
+}
+#nextButton {
+  position: absolute;
+  background-color: var(--marine-blue);
+  color: var(--white);
+  outline: none;
+}
+#nextButton:hover {
+  transition: 0.2s ease-in-out;
+  background-color: var(--purplish-blue);
+  outline: none;
+}
+#backButton {
+  position: absolute;
+  background-color: var(--white);
+  color: var(--cool-gray);
+  font-weight: 600;
+  outline: none;
+}
+#backButton:hover {
+  transition: 0.2s ease-in-out;
+  color: var(--marine-blue);
+  border: none;
+}
