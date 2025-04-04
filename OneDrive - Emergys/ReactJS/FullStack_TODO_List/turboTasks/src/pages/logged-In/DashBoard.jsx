@@ -11,7 +11,7 @@ import UseTasks from "../../Hooks/UseTasks";
 const DashBoard = () => {
   const location = useLocation();
 
-  const { fetchTask } = UseTasks();
+  const { fetchTask } = UseTasks(); 
 
   return (
     <div className="flex flex-col">

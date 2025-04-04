@@ -14,8 +14,13 @@ const LoginForm = () => {
     formState: { errors },
   } = useForm();
 
+
   const navigate = useNavigate();
-  const { login } = useContext(AuthContext);
+  const { login , secretKey } = useContext(AuthContext);
+
+  const passHash = (data) => {
+    return crypto.SHA(data.password,secretKey)
+  }
 
   const loginPage = async () => {
     const formIssue = await trigger();
@@ -24,9 +29,8 @@ const LoginForm = () => {
 
     const payLoad = {
       username: values.username,
-      password: values.password,
+      password: values.passHash,
     };
-
     try {
       const response = await axiosInstance.post("/user/login", payLoad);
       const { token } = response.data;

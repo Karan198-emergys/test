@@ -17,7 +17,7 @@ const CustomLink = ({ children, className, to }) => {
 
 const TaskDashBoard = () => {
   return (
-    <div className="taskDashBoard flex justify-end m-4 border-amber-100">
+    <div className="taskDashBoard flex justify-end m-4 border-amber-100"> 
       <div className=" w-[22%] pr-3">
         <CustomLink to="/addTask">Add Task</CustomLink>
       </div>
